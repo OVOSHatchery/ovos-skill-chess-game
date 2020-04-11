@@ -1,5 +1,6 @@
 from mycroft import MycroftSkill, intent_file_handler
 import chess
+import chess.engine
 from stockfish import Stockfish
 
 
@@ -54,10 +55,11 @@ class Chess(MycroftSkill):
         move = chess.Move.from_uci(begin+end)
         if move in board.legal_moves:
             board.push(move)
+            self.log.info("\n"+str(board))
+            self.turn()
         else:
             self.speak_dialog('wrong.turn')
         self.log.info("\n"+str(board))
-        self.turn()
 
 
     @intent_file_handler('save.intent')
