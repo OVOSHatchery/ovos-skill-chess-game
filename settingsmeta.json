@@ -1,0 +1,18 @@
+
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Einstellungen",
+                "fields": [
+                    {
+                        "name": "limit",
+                        "type": "number",
+                        "label": "limit",
+                        "value": "10"
+                    }
+                ]
+            }
+        ]
+    }
+}

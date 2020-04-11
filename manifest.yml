@@ -8,6 +8,7 @@
    # Pip dependencies on PyPI
    python:
      - python-chess
+     - stockfish
 #     - gensim
 #
 #   # Install packages with the system package manager
